@@ -29,10 +29,6 @@ class Stories extends Controller
      */
     public function single(Models\Story $story)
     {
-        $story->loadMissing('author');
-
-        dump($story);
-
         return view('single', ['story' => $story]);
     }
 
