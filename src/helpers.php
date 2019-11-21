@@ -4,6 +4,7 @@ use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Pagination\LengthAwarePaginator as Paginator;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Collection;
+use Spatie\PaginateRoute\PaginateRouteFacade as PaginateRoute;
 
 if (!function_exists('markdown')) {
     function markdown($markdown) {
