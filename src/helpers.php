@@ -13,7 +13,7 @@ if (!function_exists('markdown')) {
 
 if (!function_exists('specter_path')) {
     function specter_path(string $append = null) {
-        $path = ComposerLocator::getPath('geekish/specter');
+        $path = dirname(__DIR__);
 
         return realpath($path . ($append ? DIRECTORY_SEPARATOR . $append : $append));
     }
